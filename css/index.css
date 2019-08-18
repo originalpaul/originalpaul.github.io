@@ -1,0 +1,167 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+.container {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+
+.nav {
+    padding-top: 75%;
+    opacity: 0;
+    animation: text-show 2s forwards;
+    animation-delay: 1s;
+}
+
+.nav ul {
+    list-style-type: none;
+}
+
+.nav ul p {
+    text-align: left;
+}
+
+.nav-link:hover {
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 2px;
+    background-color: black;
+    margin: 6px 0;
+    margin-left: 10.5%;
+    transition: 0.5s;
+}
+
+.bar1 {
+  margin-top:30px;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-4.5px, 3px);
+  transform: rotate(-45deg) translate(-4.5px, 3px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.left {
+    float: left;
+    width: 9%;
+    background-color: #F8F8F0;
+    border-color: black;
+    height: 100%;
+    animation: menu-show 2s ease;
+    border-right: 1px solid black;
+}
+
+.menu-show {
+
+}
+@keyframes menu-show {
+    from{width:0px;}
+    to{width:9%;}
+}
+
+@keyframes text-show {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+.social-media-icons {
+    margin-left: 40px;
+    opacity: 0;
+    animation: text-show 1s forwards;
+    animation-delay: 1s;
+}
+
+.social-media-icons a{
+    text-decoration: none;
+}
+
+.social-media-icons img {
+    filter: grayscale(99%);
+    margin-right: 5%;
+    transition: 0.3s ease;
+}
+.social-media-icons img:hover {
+    filter: grayscale(2%);
+}
+
+#github-icon {
+    filter:invert(25%);
+}
+
+#github-icon:hover {
+    filter:invert(0%);
+}
+.right {
+    float: right;
+    width: 89%;
+}
+
+.title {
+    font-family: "Source Code Pro", monospace;
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 8%;
+}
+
+.images, .page-titles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.images {
+      height: 50%;
+}
+
+.images .card {
+    width: 32%;
+
+}
+
+.images img{
+    width: 100%;
+    transition: all .2s ease-in;
+    filter: grayscale(60%);
+}
+
+.images img:hover{
+    filter: grayscale(2%);
+}
+
+.images p, .nav li {
+    font-family: "Source Code Pro", monospace;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+}
+
+footer {
+    width:20%;
+    margin-left: 80%;
+    font-family: "Source Code Pro", monospace;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: right;
+    bottom:0;
+    position: absolute;
+
+}
