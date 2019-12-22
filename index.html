@@ -13,34 +13,30 @@
     <body>
 
     <div class="container">
-        <div class="left">
+        <div onclick="openNav()" class="menu-icon-container">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
 
-            <div class="menu-icon-container">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div>
-
-
-            <div class="nav">
-                <ul>
-                    <li><p class="nav-link" id="aboutme">About Me</p></li>
-                    <li><p class="nav-link" id="hobbies">My hobbies</p></li>
-                    <li><p class="nav-link" id="travels">Travels</p></li>
-                </ul>
-            </div>
-
-            <div class="social-media-icons">
-                <a href="https://www.facebook.com" target="_blank">
-                    <img src="https://live.staticflickr.com/65535/48562872241_cc55d8520b_o.png" height="20">
-                </a>
-                <a href="https://www.youtube.com" target="_blank">
-                    <img src="https://live.staticflickr.com/65535/48563017022_2cdac315e1_b.jpg" height="20">
-                </a>
-                <a href="https://www.github.com" target="_blank">
-                    <img id="github-icon" src="https://live.staticflickr.com/65535/48562872221_25d379a837_o.png" height="20">
-                </a>
-            </div>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="social-media-icons">
+              <a href="https://www.facebook.com" target="_blank">
+                  <img src="https://live.staticflickr.com/65535/48562872241_cc55d8520b_o.png" height="20">
+              </a>
+              <a href="https://www.youtube.com" target="_blank">
+                  <img src="https://live.staticflickr.com/65535/48563017022_2cdac315e1_b.jpg" height="20">
+              </a>
+              <a href="https://www.github.com" target="_blank">
+                  <img id="github-icon" src="https://live.staticflickr.com/65535/48562872221_25d379a837_o.png" height="20">
+              </a>
+          </div>
+          <ul>
+              <li><p class="nav-link" id="aboutme">About Me</p></li>
+              <li><p class="nav-link" id="hobbies">My hobbies</p></li>
+              <li><p class="nav-link" id="travels">Travels</p></li>
+          </ul>
         </div>
 
 

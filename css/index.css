@@ -12,8 +12,6 @@ html, body {
 .nav {
     padding-top: 75%;
     opacity: 0;
-    animation: text-show 2s forwards;
-    animation-delay: 1s;
 }
 
 .nav ul {
@@ -54,33 +52,22 @@ html, body {
 }
 
 .left {
-    float: left;
-    width: 9%;
-    background-color: #F8F8F0;
-    border-color: black;
-    height: 100%;
-    animation: menu-show 2s ease;
-    border-right: 1px solid black;
+    /* float: left;
+    width: 9%; */
+    /* background-color: #F8F8F0; */
+    /* border-color: black; */
+    /* height: 100%; */
+    /* animation: menu-show 2s ease; */
+    /* border-right: 1px solid black; */
 }
 
-.menu-show {
-
-}
-@keyframes menu-show {
-    from{width:0px;}
-    to{width:9%;}
-}
-
-@keyframes text-show {
-    from{opacity: 0;}
-    to{opacity: 1;}
+.menu-icon-container {
+  z-index: 500!important;
 }
 
 .social-media-icons {
     margin-left: 40px;
-    opacity: 0;
-    animation: text-show 1s forwards;
-    animation-delay: 1s;
+    opacity: 1;
 }
 
 .social-media-icons a{
@@ -88,7 +75,7 @@ html, body {
 }
 
 .social-media-icons img {
-    filter: grayscale(99%);
+    filter: grayscale(99%) invert(1);
     margin-right: 5%;
     transition: 0.3s ease;
 }
@@ -105,7 +92,7 @@ html, body {
 }
 .right {
     float: right;
-    width: 89%;
+    width: 100%;
 }
 
 .title {
@@ -164,4 +151,42 @@ footer {
     bottom:0;
     position: absolute;
 
+}
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: white; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  color: black;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
 }
