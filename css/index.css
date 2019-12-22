@@ -58,21 +58,26 @@ html, body {
 }
 
 .social-media-icons {
-    margin-left: 40px;
     opacity: 1;
+    display: inline-flex;
+    justify-content: flex-start;
 }
 
-.social-media-icons a{
+.social-media-icons a {
     text-decoration: none;
 }
-
 .social-media-icons img {
-    filter: grayscale(99%) invert(1);
-    margin-right: 5%;
+    filter: grayscale(99%);
+    margin-left: 0!important;
     transition: 0.3s ease;
 }
 .social-media-icons img:hover {
     filter: grayscale(2%);
+}
+
+#nav {
+  text-decoration: none;
+  list-style: none;
 }
 
 #github-icon {
@@ -172,13 +177,4 @@ footer {
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
   color: #f1f1f1;
-}
-
-/* Position and style the close button (top right corner) */
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
 }
